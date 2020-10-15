@@ -154,6 +154,30 @@ nav {
     margin: 0px 10px;
 }
 
+/*footer*/
+footer {
+    background: #EFECEC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.more_features {
+    margin: 5px;
+}
+
+/* .made_with {
+    display: flex;
+    align-items: center;
+} */
+
+.made_with img {
+    margin: 0px 5px;
+}
+
 /*media query*/
 @media (max-width: 770px) {
     /* body {
@@ -211,3 +235,13 @@ nav {
 .black_post {
     display: none;
 }
+
+/*version fixes:*/
+.toggle_icon, .share, .black_post {
+    display: none!important;
+}
+
+.logo_container {
+    margin: 0px!important;
+}
+
