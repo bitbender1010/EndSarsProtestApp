@@ -64,8 +64,8 @@ nav {
     color: white;
     font-size: 20px;
     font-weight: bold;
-    /*hide me*/
-    /* display: none; */
+    /*hide*/
+    display: none;
 }
 
 .post {
@@ -180,26 +180,22 @@ footer {
 
 /*feature not available yet*/
 .right_icons {
-    /* display: none; me*/
+    display: none;
 }
 
 /*mobile post btn*/
 .black_post {
-    /* display: none; me*/
-}
-
-/*version fixes:*/
-/* .toggle_icon, .share, .black_post {
-    display: none!important;
-} */
-
-.share {
     display: none;
 }
 
-/* .logo_container {
+/*version fixes:*/
+.toggle_icon, .share, .black_post {
+    display: none!important;
+}
+
+.logo_container {
     margin: 0px!important;
-} */
+}
 
 /**********************************/
 /*Posta protest*/
@@ -268,9 +264,6 @@ footer {
     display: none;
 }
 
-.toggle_menu {
-    display: none;
-}
 /*Congratulations*/
 .congrats {
     width: -webkit-fill-available;
