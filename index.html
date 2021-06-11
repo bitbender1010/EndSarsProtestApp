@@ -35,10 +35,13 @@
         <!--logo-->
         <div class="logo_container"> <img src="./images/logo.png"/> </div>
         </div>
+        <!--Search Input-->
+        
         <!--right icon-->
         <div class="right_icons">
+            <input onkeyup="filter()" type="search" class="search_field" placeholder="Search..." id="search"> 
             <img src="./images/search.svg" class="search_icon"/>
-            <img src="./images/filter.svg"/>
+            <!-- <img src="./images/filter.svg"/> -->
         </div>
     </nav>
 
@@ -49,29 +52,96 @@
         <div>Contribute on Github</div>
         <div> <button class="post">Post a protest</button> </div>
     </div>
+
+
 <!--grid for web-->
-<div class="protest_grid_container">
+<div id="myData"> 
+<ul class="protest_grid_container" id="menu">
     <!--protest content-->
-    <div class="protest_cover">
+    <li class="protest_cover">
         <!--title and share-->
         <div class="protest_share">
-        <div class="protest_title">Asaba Protest</div>
+        <a class="protest_title">Abeokuta Protest</a>
         <div class="share"> <img src="./images/call.svg"/> </div>
         </div>
         <div class="protest_details">
-        <div> <img src="./images/loc.svg"/> <div> Stephen Keshi Stadium, Asaba </div> </div>
+        <div> <img src="./images/loc.svg"/> <div> Iwe iroyin (NUJ), Ogun </div> </div>
         <div> <img src="./images/datee.svg"/> <div> Sat, Jun 12th </div> </div>
         <div> <img src="./images/time.svg"/> <div> 9am </div> </div>
         <div> <img src="./images/user.svg"/> <div> Unavailable </div> </div>
         <div> <img src="./images/call.svg"/> <div> Unavailable </div> </div>
         </div>
-    </div>
+    </li>
 
     <!--protest content-->
-    <div class="protest_cover">
+    <li class="protest_cover">
         <!--title and share-->
         <div class="protest_share">
-        <div class="protest_title">Auchi Protest</div>
+        <a class="protest_title" data-fiilter="A">Akure Protest</a>
+        <div class="share"> <img src="./images/call.svg"/> </div>
+        </div>
+        <div class="protest_details">
+        <div> <img src="./images/loc.svg"/> <div>Post Office, Ondo </div> </div>
+        <div> <img src="./images/datee.svg"/> <div> Sat, Jun 12th </div> </div>
+        <div> <img src="./images/time.svg"/> <div> 9am </div> </div>
+        <div> <img src="./images/user.svg"/> <div> Unavailable </div> </div>
+        <div> <img src="./images/call.svg"/> <div> Unavailable </div> </div>
+        </div>
+    </li>
+
+    <!--protest content-->
+    <li class="protest_cover">
+        <!--title and share-->
+        <div class="protest_share">
+        <a class="protest_title" data-fiilter="A">Akwa Ibom Protest</a>
+        <div class="share"> <img src="./images/call.svg"/> </div>
+        </div>
+        <div class="protest_details">
+        <div> <img src="./images/loc.svg"/> <div>Plaza Uyo, Awka Ibom </div> </div>
+        <div> <img src="./images/datee.svg"/> <div> Sat, Jun 12th </div> </div>
+        <div> <img src="./images/time.svg"/> <div> 9am </div> </div>
+        <div> <img src="./images/user.svg"/> <div> Unavailable </div> </div>
+        <div> <img src="./images/call.svg"/> <div> Unavailable </div> </div>
+        </div>
+    </li>
+
+    <!--protest content-->
+    <li class="protest_cover">
+        <!--title and share-->
+        <div class="protest_share">
+        <a class="protest_title" data-fiilter="A">Asaba Protest</a>
+        <div class="share"> <img src="./images/call.svg"/> </div>
+        </div>
+        <div class="protest_details">
+        <div> <img src="./images/loc.svg"/> <div>Stephen Keshi Stadium, Delta </div> </div>
+        <div> <img src="./images/datee.svg"/> <div> Sat, Jun 12th </div> </div>
+        <div> <img src="./images/time.svg"/> <div> 9am </div> </div>
+        <div> <img src="./images/user.svg"/> <div> Unavailable </div> </div>
+        <div> <img src="./images/call.svg"/> <div> Unavailable </div> </div>
+        </div>
+    </li>
+
+    <!--protest content-->
+    <li class="protest_cover">
+        <!--title and share-->
+        <div class="protest_share">
+        <a class="protest_title" data-fiilter="A">Asaba Protest</a>
+        <div class="share"> <img src="./images/call.svg"/> </div>
+        </div>
+        <div class="protest_details">
+        <div> <img src="./images/loc.svg"/> <div>Obuzuo bus-stop, Asaba, Delta </div> </div>
+        <div> <img src="./images/datee.svg"/> <div> Sat, Jun 12th </div> </div>
+        <div> <img src="./images/time.svg"/> <div> 9am </div> </div>
+        <div> <img src="./images/user.svg"/> <div> Unavailable </div> </div>
+        <div> <img src="./images/call.svg"/> <div> Unavailable </div> </div>
+        </div>
+    </li>
+
+    <!--protest content-->
+    <li class="protest_cover">
+        <!--title and share-->
+        <div class="protest_share">
+        <a class="protest_title" data-fiilter="A">Auchi Protest</a>
         <div class="share"> <img src="./images/call.svg"/> </div>
         </div>
         <div class="protest_details">
@@ -81,111 +151,360 @@
         <div> <img src="./images/user.svg"/> <div> Unavailable </div> </div>
         <div> <img src="./images/call.svg"/> <div> Unavailable </div> </div>
         </div>
-    </div>
-</div>
-<!--grid for web-->
-<div class="protest_grid_container">
-    <!--protest content-->
-    <div class="protest_cover">
-        <!--title and share-->
-        <div class="protest_share">
-        <div class="protest_title">Ibadan Protest</div>
-        <div class="share"> <img src="./images/call.svg"/> </div>
-        </div>
-        <div class="protest_details">
-        <div> <img src="./images/loc.svg"/> <div> Mokola roundabout, Oyo </div> </div>
-        <div> <img src="./images/datee.svg"/> <div> Sat, Jun 12th </div> </div>
-        <div> <img src="./images/time.svg"/> <div> 8:30am </div> </div>
-        <div> <img src="./images/user.svg"/> <div> Unavailable </div> </div>
-        <div> <img src="./images/call.svg"/> <div> Unavailable </div> </div>
-        </div>
-    </div>
+    </li>
 
     <!--protest content-->
-    <div class="protest_cover">
+    <li class="protest_cover">
         <!--title and share-->
         <div class="protest_share">
-        <div class="protest_title">Calabar Protest</div>
+        <a class="protest_title" data-fiilter="A">Austin Texas Protest</a>
         <div class="share"> <img src="./images/call.svg"/> </div>
         </div>
         <div class="protest_details">
-        <div> <img src="./images/loc.svg"/> <div> Freedom Park, Mary Slessor Avenue, Calabar </div> </div>
+        <div> <img src="./images/loc.svg"/> <div>Texas state capitol</div> </div>
         <div> <img src="./images/datee.svg"/> <div> Sat, Jun 12th </div> </div>
         <div> <img src="./images/time.svg"/> <div> 9am </div> </div>
         <div> <img src="./images/user.svg"/> <div> Unavailable </div> </div>
         <div> <img src="./images/call.svg"/> <div> Unavailable </div> </div>
         </div>
-    </div>
-</div>
+    </li>
 
-<!--grid for web-->
-<div class="protest_grid_container">
     <!--protest content-->
-    <div class="protest_cover">
+    <li class="protest_cover">
         <!--title and share-->
         <div class="protest_share">
-        <div class="protest_title">Jos Protest</div>
+        <a class="protest_title" data-fiilter="A">Bauchi Protest</a>
         <div class="share"> <img src="./images/call.svg"/> </div>
         </div>
         <div class="protest_details">
-        <div> <img src="./images/loc.svg"/> <div> Old Airport Junction, Plateau </div> </div>
+        <div> <img src="./images/loc.svg"/> <div>Wenti, behind Abubakar Tafawa Balewa Stadium (Gate 6)</div> </div>
         <div> <img src="./images/datee.svg"/> <div> Sat, Jun 12th </div> </div>
-        <div> <img src="./images/time.svg"/> <div> 8am </div> </div>
+        <div> <img src="./images/time.svg"/> <div> 9am </div> </div>
         <div> <img src="./images/user.svg"/> <div> Unavailable </div> </div>
         <div> <img src="./images/call.svg"/> <div> Unavailable </div> </div>
         </div>
-    </div>
-    
-    <!--protest content-->
-    <div class="protest_cover">
-        <!--title and share-->
-        <div class="protest_share">
-        <div class="protest_title">Akure Protest</div>
-        <div class="share"> <img src="./images/call.svg"/> </div>
-        </div>
-        <div class="protest_details">
-        <div> <img src="./images/loc.svg"/> <div> Post Office, Akure </div> </div>
-        <div> <img src="./images/datee.svg"/> <div> Sat, Jun 12th </div> </div>
-        <div> <img src="./images/time.svg"/> <div> 7am </div> </div>
-        <div> <img src="./images/user.svg"/> <div> Unavailable </div> </div>
-        <div> <img src="./images/call.svg"/> <div> Unavailable </div> </div>
-        </div>
-    </div>
-</div>
+    </li>
 
-<!--grid for web-->
-<div class="protest_grid_container">
     <!--protest content-->
-    <div class="protest_cover">
+    <li class="protest_cover">
         <!--title and share-->
         <div class="protest_share">
-        <div class="protest_title">Bauchi Protest</div>
+        <a class="protest_title" data-fiilter="A">Brazil Protest</a>
         <div class="share"> <img src="./images/call.svg"/> </div>
         </div>
         <div class="protest_details">
-        <div> <img src="./images/loc.svg"/> <div>Wenti, behind Abubakar Tafawa Balewa Stadium, Gate 6 </div> </div>
+        <div> <img src="./images/loc.svg"/> <div>Republica | Centro | Sao Paulo</div> </div>
         <div> <img src="./images/datee.svg"/> <div> Sat, Jun 12th </div> </div>
-        <div> <img src="./images/time.svg"/> <div> 8am </div> </div>
+        <div> <img src="./images/time.svg"/> <div> 9am </div> </div>
         <div> <img src="./images/user.svg"/> <div> Unavailable </div> </div>
         <div> <img src="./images/call.svg"/> <div> Unavailable </div> </div>
         </div>
-    </div>
-    
+    </li>
+
     <!--protest content-->
-    <div class="protest_cover">
+    <li class="protest_cover">
         <!--title and share-->
         <div class="protest_share">
-        <div class="protest_title">Enugu Protest</div>
+        <a class="protest_title" data-fiilter="A">Calabar Protest</a>
         <div class="share"> <img src="./images/call.svg"/> </div>
         </div>
         <div class="protest_details">
-        <div> <img src="./images/loc.svg"/> <div> Okpara Square, Enugu </div> </div>
+        <div> <img src="./images/loc.svg"/> <div>Freedom Park, Mary Slessor Avenue, Calabar</div> </div>
         <div> <img src="./images/datee.svg"/> <div> Sat, Jun 12th </div> </div>
         <div> <img src="./images/time.svg"/> <div> 10am </div> </div>
         <div> <img src="./images/user.svg"/> <div> Unavailable </div> </div>
         <div> <img src="./images/call.svg"/> <div> Unavailable </div> </div>
         </div>
-    </div>
+    </li>
+
+    <!--protest content-->
+    <li class="protest_cover">
+        <!--title and share-->
+        <div class="protest_share">
+        <a class="protest_title" data-fiilter="A">Enugu Protest</a>
+        <div class="share"> <img src="./images/call.svg"/> </div>
+        </div>
+        <div class="protest_details">
+        <div> <img src="./images/loc.svg"/> <div>Okpara Square, Enugu</div> </div>
+        <div> <img src="./images/datee.svg"/> <div> Sat, Jun 12th </div> </div>
+        <div> <img src="./images/time.svg"/> <div> 9am </div> </div>
+        <div> <img src="./images/user.svg"/> <div> Unavailable </div> </div>
+        <div> <img src="./images/call.svg"/> <div> Unavailable </div> </div>
+        </div>
+    </li>
+
+    <!--protest content-->
+    <li class="protest_cover">
+        <!--title and share-->
+        <div class="protest_share">
+        <a class="protest_title" data-fiilter="A">FTC Abuja Protest</a>
+        <div class="share"> <img src="./images/call.svg"/> </div>
+        </div>
+        <div class="protest_details">
+        <div> <img src="./images/loc.svg"/> <div>Unity Fountain, opposite Transcorp Hilton</div> </div>
+        <div> <img src="./images/datee.svg"/> <div> Sat, Jun 12th </div> </div>
+        <div> <img src="./images/time.svg"/> <div> 9am </div> </div>
+        <div> <img src="./images/user.svg"/> <div> Unavailable </div> </div>
+        <div> <img src="./images/call.svg"/> <div> Unavailable </div> </div>
+        </div>
+    </li>
+
+    <!--protest content-->
+    <li class="protest_cover">
+        <!--title and share-->
+        <div class="protest_share">
+        <a class="protest_title" data-fiilter="A">Germany Protest</a>
+        <div class="share"> <img src="./images/call.svg"/> </div>
+        </div>
+        <div class="protest_details">
+        <div> <img src="./images/loc.svg"/> <div>Weibrauenstrsabe 12, frankfurt (willy brandst plaz)</div> </div>
+        <div> <img src="./images/datee.svg"/> <div> Sat, Jun 12th </div> </div>
+        <div> <img src="./images/time.svg"/> <div> 9am </div> </div>
+        <div> <img src="./images/user.svg"/> <div> Unavailable </div> </div>
+        <div> <img src="./images/call.svg"/> <div> Unavailable </div> </div>
+        </div>
+    </li>
+
+    <!--protest content-->
+    <li class="protest_cover">
+        <!--title and share-->
+        <div class="protest_share">
+        <a class="protest_title" data-fiilter="A">Gombe Protest</a>
+        <div class="share"> <img src="./images/call.svg"/> </div>
+        </div>
+        <div class="protest_details">
+        <div> <img src="./images/loc.svg"/> <div>Rain Roundabout, Gombe</div> </div>
+        <div> <img src="./images/datee.svg"/> <div> Sat, Jun 12th </div> </div>
+        <div> <img src="./images/time.svg"/> <div> 9am </div> </div>
+        <div> <img src="./images/user.svg"/> <div> Unavailable </div> </div>
+        <div> <img src="./images/call.svg"/> <div> Unavailable </div> </div>
+        </div>
+    </li>
+
+    <!--protest content-->
+    <li class="protest_cover">
+        <!--title and share-->
+        <div class="protest_share">
+        <a class="protest_title" data-fiilter="A">Houston Texas Protest</a>
+        <div class="share"> <img src="./images/call.svg"/> </div>
+        </div>
+        <div class="protest_details">
+        <div> <img src="./images/loc.svg"/> <div>9801 Bisssonnet st. Houston, TX, 77036</div> </div>
+        <div> <img src="./images/datee.svg"/> <div> Sat, Jun 12th </div> </div>
+        <div> <img src="./images/time.svg"/> <div> 2pm </div> </div>
+        <div> <img src="./images/user.svg"/> <div> Unavailable </div> </div>
+        <div> <img src="./images/call.svg"/> <div> Unavailable </div> </div>
+        </div>
+    </li>
+
+    <!--protest content-->
+    <li class="protest_cover">
+        <!--title and share-->
+        <div class="protest_share">
+        <a class="protest_title" data-fiilter="A">Houston Texas Protest</a>
+        <div class="share"> <img src="./images/call.svg"/> </div>
+        </div>
+        <div class="protest_details">
+        <div> <img src="./images/loc.svg"/> <div>9801 Bisssonnet st. Houston, TX, 77036</div> </div>
+        <div> <img src="./images/datee.svg"/> <div> Sat, Jun 12th </div> </div>
+        <div> <img src="./images/time.svg"/> <div> 2pm </div> </div>
+        <div> <img src="./images/user.svg"/> <div> Unavailable </div> </div>
+        <div> <img src="./images/call.svg"/> <div> Unavailable </div> </div>
+        </div>
+    </li>
+
+    <!--protest content-->
+    <li class="protest_cover">
+        <!--title and share-->
+        <div class="protest_share">
+        <a class="protest_title" data-fiilter="A">Ibadan Protest</a>
+        <div class="share"> <img src="./images/call.svg"/> </div>
+        </div>
+        <div class="protest_details">
+        <div> <img src="./images/loc.svg"/> <div>Mokola roundabout, Oyo</div> </div>
+        <div> <img src="./images/datee.svg"/> <div> Sat, Jun 12th </div> </div>
+        <div> <img src="./images/time.svg"/> <div> 8:30am </div> </div>
+        <div> <img src="./images/user.svg"/> <div> Unavailable </div> </div>
+        <div> <img src="./images/call.svg"/> <div> Unavailable </div> </div>
+        </div>
+    </li>
+
+    <!--protest content-->
+    <li class="protest_cover">
+        <!--title and share-->
+        <div class="protest_share">
+        <a class="protest_title" data-fiilter="A">Jos Protest</a>
+        <div class="share"> <img src="./images/call.svg"/> </div>
+        </div>
+        <div class="protest_details">
+        <div> <img src="./images/loc.svg"/> <div>Old Airport Junction, Plateau</div> </div>
+        <div> <img src="./images/datee.svg"/> <div> Sat, Jun 12th </div> </div>
+        <div> <img src="./images/time.svg"/> <div> 9am </div> </div>
+        <div> <img src="./images/user.svg"/> <div> Unavailable </div> </div>
+        <div> <img src="./images/call.svg"/> <div> Unavailable </div> </div>
+        </div>
+    </li>
+
+    <!--protest content-->
+    <li class="protest_cover">
+        <!--title and share-->
+        <div class="protest_share">
+        <a class="protest_title" data-fiilter="A">Kaiserslautern</a>
+        <div class="share"> <img src="./images/call.svg"/> </div>
+        </div>
+        <div class="protest_details">
+        <div> <img src="./images/loc.svg"/> <div>Kaiserslautern Hauptbahnof</div> </div>
+        <div> <img src="./images/datee.svg"/> <div> Sat, Jun 12th </div> </div>
+        <div> <img src="./images/time.svg"/> <div> 9pm </div> </div>
+        <div> <img src="./images/user.svg"/> <div> Unavailable </div> </div>
+        <div> <img src="./images/call.svg"/> <div> Unavailable </div> </div>
+        </div>
+    </li>
+
+    <!--protest content-->
+    <li class="protest_cover">
+        <!--title and share-->
+        <div class="protest_share">
+        <a class="protest_title" data-fiilter="A">Kano Protest</a>
+        <div class="share"> <img src="./images/call.svg"/> </div>
+        </div>
+        <div class="protest_details">
+        <div> <img src="./images/loc.svg"/> <div>Zaria road, by Zoo road</div> </div>
+        <div> <img src="./images/datee.svg"/> <div> Sat, Jun 12th </div> </div>
+        <div> <img src="./images/time.svg"/> <div> 7:15am </div> </div>
+        <div> <img src="./images/user.svg"/> <div> Unavailable </div> </div>
+        <div> <img src="./images/call.svg"/> <div> Unavailable </div> </div>
+        </div>
+    </li>
+
+    <!--protest content-->
+    <li class="protest_cover">
+        <!--title and share-->
+        <div class="protest_share">
+        <a class="protest_title" data-fiilter="A">Lagos Protest</a>
+        <div class="share"> <img src="./images/call.svg"/> </div>
+        </div>
+        <div class="protest_details">
+        <div> <img src="./images/loc.svg"/> <div>Gani Fawehinmi Park, Ojota</div> </div>
+        <div> <img src="./images/datee.svg"/> <div> Sat, Jun 12th </div> </div>
+        <div> <img src="./images/time.svg"/> <div> 9am </div> </div>
+        <div> <img src="./images/user.svg"/> <div> Unavailable </div> </div>
+        <div> <img src="./images/call.svg"/> <div> Unavailable </div> </div>
+        </div>
+    </li>
+
+    <!--protest content-->
+    <li class="protest_cover">
+        <!--title and share-->
+        <div class="protest_share">
+        <a class="protest_title" data-fiilter="A">London Protest</a>
+        <div class="share"> <img src="./images/call.svg"/> </div>
+        </div>
+        <div class="protest_details">
+        <div> <img src="./images/loc.svg"/> <div>Trafalgar square, Central london</div> </div>
+        <div> <img src="./images/datee.svg"/> <div> Sat, Jun 12th </div> </div>
+        <div> <img src="./images/time.svg"/> <div> 12pm </div> </div>
+        <div> <img src="./images/user.svg"/> <div> Unavailable </div> </div>
+        <div> <img src="./images/call.svg"/> <div> Unavailable </div> </div>
+        </div>
+    </li>
+
+    <!--protest content-->
+    <li class="protest_cover">
+        <!--title and share-->
+        <div class="protest_share">
+        <a class="protest_title" data-fiilter="A">London Protest</a>
+        <div class="share"> <img src="./images/call.svg"/> </div>
+        </div>
+        <div class="protest_details">
+        <div> <img src="./images/loc.svg"/> <div>Northumberland avenue, london WC2N 5BX</div> </div>
+        <div> <img src="./images/datee.svg"/> <div> Sat, Jun 12th </div> </div>
+        <div> <img src="./images/time.svg"/> <div> 12pm </div> </div>
+        <div> <img src="./images/user.svg"/> <div> Unavailable </div> </div>
+        <div> <img src="./images/call.svg"/> <div> Unavailable </div> </div>
+        </div>
+    </li>
+
+    <!--protest content-->
+    <li class="protest_cover">
+        <!--title and share-->
+        <div class="protest_share">
+        <a class="protest_title" data-fiilter="A">Netherland Protest</a>
+        <div class="share"> <img src="./images/call.svg"/> </div>
+        </div>
+        <div class="protest_details">
+        <div> <img src="./images/loc.svg"/> <div>Amsterdam Bijlmer Arena</div> </div>
+        <div> <img src="./images/datee.svg"/> <div> Sat, Jun 12th </div> </div>
+        <div> <img src="./images/time.svg"/> <div> 7:15am </div> </div>
+        <div> <img src="./images/user.svg"/> <div> Unavailable </div> </div>
+        <div> <img src="./images/call.svg"/> <div> Unavailable </div> </div>
+        </div>
+    </li>
+
+        <!--protest content-->
+    <li class="protest_cover">
+        <!--title and share-->
+        <div class="protest_share">
+        <a class="protest_title" data-fiilter="A">Port Harcourt Protest</a>
+        <div class="share"> <img src="./images/call.svg"/> </div>
+        </div>
+        <div class="protest_details">
+        <div> <img src="./images/loc.svg"/> <div>Plesure park, Aba road</div> </div>
+        <div> <img src="./images/datee.svg"/> <div> Sat, Jun 12th </div> </div>
+        <div> <img src="./images/time.svg"/> <div> 9am </div> </div>
+        <div> <img src="./images/user.svg"/> <div> Unavailable </div> </div>
+        <div> <img src="./images/call.svg"/> <div> Unavailable </div> </div>
+        </div>
+    </li>
+
+    <!--protest content-->
+    <li class="protest_cover">
+        <!--title and share-->
+        <div class="protest_share">
+        <a class="protest_title" data-fiilter="A">Taraba Protest</a>
+        <div class="share"> <img src="./images/call.svg"/> </div>
+        </div>
+        <div class="protest_details">
+        <div> <img src="./images/loc.svg"/> <div>Trade far complex, Jalingo</div> </div>
+        <div> <img src="./images/datee.svg"/> <div> Sat, Jun 12th </div> </div>
+        <div> <img src="./images/time.svg"/> <div> 9am </div> </div>
+        <div> <img src="./images/user.svg"/> <div> Unavailable </div> </div>
+        <div> <img src="./images/call.svg"/> <div> Unavailable </div> </div>
+        </div>
+    </li>
+
+    <!--protest content-->
+    <li class="protest_cover">
+        <!--title and share-->
+        <div class="protest_share">
+        <a class="protest_title" data-fiilter="A">Toronto Protest</a>
+        <div class="share"> <img src="./images/call.svg"/> </div>
+        </div>
+        <div class="protest_details">
+        <div> <img src="./images/loc.svg"/> <div>Amsterdam Bijlmer Arena</div> </div>
+        <div> <img src="./images/datee.svg"/> <div> Sat, Jun 12th </div> </div>
+        <div> <img src="./images/time.svg"/> <div> 7:15am </div> </div>
+        <div> <img src="./images/user.svg"/> <div> Unavailable </div> </div>
+        <div> <img src="./images/call.svg"/> <div> Unavailable </div> </div>
+        </div>
+    </li>
+
+        <!--protest content-->
+    <li class="protest_cover">
+        <!--title and share-->
+        <div class="protest_share">
+        <a class="protest_title" data-fiilter="A">Netherland Protest</a>
+        <div class="share"> <img src="./images/call.svg"/> </div>
+        </div>
+        <div class="protest_details">
+        <div> <img src="./images/loc.svg"/> <div>Amsterdam Bijlmer Arena</div> </div>
+        <div> <img src="./images/datee.svg"/> <div> Sat, Jun 12th </div> </div>
+        <div> <img src="./images/time.svg"/> <div> 7:15am </div> </div>
+        <div> <img src="./images/user.svg"/> <div> Unavailable </div> </div>
+        <div> <img src="./images/call.svg"/> <div> Unavailable </div> </div>
+        </div>
+    </li>
+</ul>
 </div>
 <!--footer-->
 <footer>
@@ -264,5 +583,32 @@
         <button class="post_protest_btn">Go home</button>
     </div>
 </div>
+
+<!--JS-->
+<!-- <script>
+fetch('data.json')
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        appendData(data);
+    })
+    .catch(function (eer) {
+        console.log(eer);
+    });
+
+    function appendData(data) {
+        var manContainer = document.getElementById("myData");
+        for(var i = 0; i < data.length; i++) {
+            var div = document.createElement("div");
+            div.innerHTML = 'Name: ' + data[i].protest_name + ' ' + data[i].pro_location;
+            manContainer.appendChild(div);
+        }
+    }
+
+console.log("ENTERED");
+</script> -->
+<!--JS-->
+<script src="./search.js"> </script>
 </body>
 </html>

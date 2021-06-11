@@ -48,11 +48,16 @@ nav {
 /*right icons*/
 .right_icons {
     display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 40%;
 }
 
 .right_icons img {
     width: 40px;
     height: auto;
+    cursor: pointer;
+    display: none;
 }
 
 /*toggle menu*/
@@ -179,9 +184,9 @@ footer {
 }
 
 /*feature not available yet*/
-.right_icons {
+/* .right_icons {
     display: none;
-}
+} */
 
 /*mobile post btn*/
 .black_post {
@@ -359,4 +364,51 @@ footer {
     right: 20px;
     /*tempoary hide*/
     display: none!important;
+}
+
+/***pure cs*/
+.search_field {
+    height: 35px;
+    width: 300px;
+    border-radius: 5px;
+    padding-left: 10px;
+    width: 100%;
+}
+
+/*list style*/
+ul {
+    list-style: none;
+    padding: 0px;
+}
+
+/*remove x search*/
+input[type=search]::-ms-clear, input[type=search]::-reveal {
+    display: none;
+}
+
+/*chrome*/
+input[type=search]::-webkit-search-decoration, 
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+    display: none;
+}
+
+/*media for search*/
+/*media query*/
+@media (max-width: 770px) {
+    .right_icons {
+        width: 60%;
+    }
+}
+
+@media (max-width: 420px) {
+    .right_icons {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    nav {
+        display: block;
+    }
 }

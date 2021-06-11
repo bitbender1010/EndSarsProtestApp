@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join A Protest</title>
+    <!--CSS-->
+    <link href="./style.css" rel="stylesheet">
+    <!--Favicon-->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180659288-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-180659288-1');
+</script>
+
+</head>
+<body>
+<div class="screen_one">
+<!--beginning of screen 1-->
+    <nav>
+        <!--toggle and Logo cover-->
+        <div class="toggle_icon_cover">
+        <!--toggle icon-->
+        <div class="toggle_icon">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <!--logo-->
+        <div class="logo_container"> <img src="./images/logo.png"/> </div>
+        </div>
+        <!--Search Input-->
+        
+        <!--right icon-->
+        <div class="right_icons">
+            <input onkeyup="filter()" type="search" class="search_field" placeholder="Search..." id="search"> 
+            <img src="./images/search.svg" class="search_icon"/>
+            <!-- <img src="./images/filter.svg"/> -->
+        </div>
+    </nav>
+
+    <!--toggle menu-->
+    <div class="toggle_menu">
+        <div>Home</div>
+        <div>About</div>
+        <div>Contribute on Github</div>
+        <div> <button class="post">Post a protest</button> </div>
+    </div>
+<!--grid for web-->
+<div id="myData"> 
+<ul class="protest_grid_container" id="menu">
+    <!--protest content-->
+    <li class="protest_cover">
+        <!--title and share-->
+        <div class="protest_share">
+        <a class="protest_title">Asaba Protest</a>
+        <div class="share"> <img src="./images/call.svg"/> </div>
+        </div>
+        <div class="protest_details">
+        <div> <img src="./images/loc.svg"/> <div> Stephen Keshi Stadium, Asaba </div> </div>
+        <div> <img src="./images/datee.svg"/> <div> Sat, Jun 12th </div> </div>
+        <div> <img src="./images/time.svg"/> <div> 9am </div> </div>
+        <div> <img src="./images/user.svg"/> <div> Unavailable </div> </div>
+        <div> <img src="./images/call.svg"/> <div> Unavailable </div> </div>
+        </div>
+    </li>
+
+    <!--protest content-->
+    <li class="protest_cover">
+        <!--title and share-->
+        <div class="protest_share">
+        <a class="protest_title" data-fiilter="A">Auchi Protest</a>
+        <div class="share"> <img src="./images/call.svg"/> </div>
+        </div>
+        <div class="protest_details">
+        <div> <img src="./images/loc.svg"/> <div>Jattu Junction, Edo </div> </div>
+        <div> <img src="./images/datee.svg"/> <div> Sat, Jun 12th </div> </div>
+        <div> <img src="./images/time.svg"/> <div> 9am </div> </div>
+        <div> <img src="./images/user.svg"/> <div> Unavailable </div> </div>
+        <div> <img src="./images/call.svg"/> <div> Unavailable </div> </div>
+        </div>
+    </li>
+</ul>
+</div>
+
+<!--JS-->
+<script src="./search.js">
+</script>
+</body>
+</html>
