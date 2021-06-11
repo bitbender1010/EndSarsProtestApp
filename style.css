@@ -261,7 +261,7 @@ footer {
 .screen_two {
     margin: 20px 0px;
     /*tempoary hide*/
-    display: none;
+    /* display: none; */
 }
 
 /*Congratulations*/
@@ -331,7 +331,7 @@ footer {
         bottom: 20px;
         right: 20px;
         /*tempoary hide*/
-        display: none!important;
+        /* display: none!important; */
     }
 
     .black_post img {
@@ -343,4 +343,20 @@ footer {
     .protest_input_grid {
         grid-template-columns: 1fr;
     }
+}
+
+/**************************/
+.black_post {
+    display: flex!important;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    width: 70px;
+    height: 70px;
+    border-radius: 70px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    /*tempoary hide*/
+    /* display: none!important; */
 }
