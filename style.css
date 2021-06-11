@@ -370,7 +370,7 @@ footer {
 .search_field {
     height: 35px;
     width: 300px;
-    border-radius: 5px;
+    border-radius: 5px!important;
     padding-left: 10px;
     width: 100%;
 }
