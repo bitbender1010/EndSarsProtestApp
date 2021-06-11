@@ -261,7 +261,7 @@ footer {
 .screen_two {
     margin: 20px 0px;
     /*tempoary hide*/
-    /* display: none; */
+    display: none;
 }
 
 /*Congratulations*/
@@ -331,7 +331,7 @@ footer {
         bottom: 20px;
         right: 20px;
         /*tempoary hide*/
-        /* display: none!important; */
+        display: none!important;
     }
 
     .black_post img {
@@ -358,5 +358,5 @@ footer {
     bottom: 20px;
     right: 20px;
     /*tempoary hide*/
-    /* display: none!important; */
+    display: none!important;
 }
